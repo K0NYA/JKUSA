@@ -40,20 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-	var animation = lottie.load('assets/img/comp.lottie');
-	animation.addEventListener('DOMLoaded', function() {
-	animation.play();
-});
-
-});
-
-	animation.setSpeed(2.0); // Change animation speed to 2x
-	animation.loop = true; // Set animation to loop
-	animation.play(); // Start playing the animation
-
-
-
-
   /**
    * Navbar links active state on scroll
    */
