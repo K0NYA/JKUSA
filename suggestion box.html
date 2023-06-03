@@ -98,39 +98,56 @@
 	
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Sample Inner Page</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Breadcrumbs -->
-	
+   
 	</main><!-- End #main -->
 	
 		<div class="container">  
 	  <form id="suggestion_box" action="" method="post">
 		<h3>Suggestion box</h3>
-		<h4>Question of the month:</h4>
-		<p>Here comes the question</p>
-		<h5>Or general improvement ideas</h5>
-		<fieldset>
-		  <textarea placeholder="Suggestion" tabindex="5" name="suggestion_text" required></textarea>
-		</fieldset>
-		<fieldset>
-		  <button name="submit" type="submit" id="suggestion_box" data-submit="...Sending" value="text to send">Submit</button>
-		</fieldset>
-	  </form>
+    <title>Anonymous Messaging</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      .form-group {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Anonymous Messaging</h1>
+      <form>
+        <div class="form-row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="department">Department:</label>
+              <select class="form-control" id="department" required>
+                <option value="">Choose...</option>
+                <option value="CES">CES</option>
+                <option value="PAS">PAS</option>
+                <option value="EPD">EPD</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="category">Category:</label>
+              <select class="form-control" id="department" required>
+                <option value="">Choose...</option>
+                <option value="STUDENT WELFARE">STUDENT WELFARE</option>
+                <option value="ACADEMICS">ACADEMICS</option>
+                <option value="SITUATIONAL REPORT">SITUATIONAL REPORT</option>
+              </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message (200 words max):</label>
+          <textarea class="form-control" id="message" rows="5" maxlength="200" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
 	</div>
 
   <!-- ======= Footer ======= -->
