@@ -95,29 +95,113 @@
       </div>
     </div>
 	<!-- end of club section -->
-
+  <div class="container">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li>Blog Details</li>
+    </ol>
+  </div>
+</nav>
+</div>
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Sample Inner Page</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Breadcrumbs -->
+    <!-- End Breadcrumbs -->
 
   </main><!-- End #main -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
+    .slider {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 50%;
+      height: 50%;
+      animation: slide 10s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      75% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+    }
+
+    .content img {
+      width: 50%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      width: 50%;
+      margin: 0;
+      padding-left: 20px;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .content img,
+      .content p {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slides">
+      <img src="assets/img/Boy-attending-video-lecture.png" alt="Slide 1">
+      <img src="assets/img/bluejkuat.jpg"  alt="Slide 2">
+      <img src="assets/img/jkuat.jpeg"alt="Slide 3">
+      <img src="assets/img/hero-bg-abstract.jpg" alt="Slide 3">
+      <img src="assets/img/apple-touch-icon.png" alt="Slide 3">
+      <img src="assets/img/cta-bg.jpg" alt="Slide 3">
+      <img src="assets/img/logo01.png" alt="Slide 3">
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="photo.jpg" alt="Photo">
+    <p>Blog text goes here...</p>
+  </div>
   <!-- ======= Footer ======= -->
  <footer id="footer" class="footer">
 
