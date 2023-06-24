@@ -513,7 +513,7 @@ section {
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+  scrollbar-color: var(--color-primary);
 }
 
 .slider::-webkit-scrollbar {
@@ -531,7 +531,7 @@ section {
 
 .slides {
   display: flex;
-  width: 400%;
+  width: 200%;
   height: 100%;
   animation: slide 10s infinite;
 }
@@ -559,7 +559,85 @@ section {
     transform: translateX(0);
   }
 }
-/*end of slide sroll bar*/
+
+
+/* body slider*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 40%;
+  height: 40%;
+  animation: slide 10s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  65% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.content img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content p {
+  width: 50%;
+  margin: 0;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content img,
+  .content p {
+    width: 100%;
+  }
+}
+
+
+/* end of body slider*/ 
 
 
 #suggestion_box textarea, #suggestion_box button[type="submit"] { font:400 16px/16px "Open Sans", Helvetica, Arial, sans-serif; }
